@@ -1,8 +1,20 @@
-# AulaIA
+# Patas & Cia
 
-Projeto da AulaIA, feito com Next.js. A aplicação tem uma única página (`/`): a landing page do petshop fictício Patas & Cia, com contato pelo WhatsApp.
+Landing page de um petshop fictício, criada como projeto de estudo da AulaIA. É um site institucional de uma única página (`/`), feito com Next.js, para apresentar os serviços e levar o visitante a agendar pelo WhatsApp.
 
-O nome, o WhatsApp, o telefone, o endereço e o horário são provisórios e ficam em constantes no topo de `app/page.tsx`.
+O projeto não tem backend, banco de dados nem autenticação. Todo o conteúdo fica no próprio código.
+
+## O que tem na página
+
+- **Cabeçalho:** fica fixo no topo, com navegação pelas seções e botão do WhatsApp.
+- **Início:** chamada principal, com botões para agendar e para ver os serviços.
+- **Serviços:** banho e tosa, veterinário, vacinação, e rações e acessórios.
+- **Sobre:** apresentação do petshop e seus diferenciais.
+- **Contato:** botão do WhatsApp, telefone, endereço e horário de funcionamento.
+
+O layout é responsivo, e as cores acompanham o tema claro ou escuro do sistema.
+
+> O nome, o WhatsApp, o telefone, o endereço e o horário são provisórios. Para trocá-los, edite as constantes no topo de `app/page.tsx`.
 
 ## Tecnologias
 
@@ -19,10 +31,9 @@ O nome, o WhatsApp, o telefone, o endereço e o horário são provisórios e fic
 Pré-requisito: Node.js 20.9 ou superior.
 
 ```bash
+git clone https://github.com/Brenogfr/projeto1.git
+cd projeto1
 npm install
-```
-
-```bash
 npm run dev
 ```
 
@@ -42,12 +53,13 @@ Depois, abra [http://localhost:3000](http://localhost:3000). Na primeira execuç
 
 ```text
 projeto1/
+├── .claude/            # Regras e skills do Claude Code
 ├── app/
 │   ├── favicon.ico
 │   ├── globals.css     # Tailwind, cores e tema claro/escuro
 │   ├── layout.tsx      # Layout raiz: idioma, metadados e fontes
 │   └── page.tsx        # Landing page do petshop (/)
-├── public/             # Arquivos estáticos
+├── public/             # SVGs do modelo do Next.js, não usados pela página
 ├── AGENTS.md           # Regras para agentes de IA (gerado pelo `next dev`)
 ├── CLAUDE.md           # Convenções do projeto para o Claude Code
 ├── eslint.config.mjs
