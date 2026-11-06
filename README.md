@@ -47,7 +47,7 @@ Depois, abra [http://localhost:3000](http://localhost:3000). Na primeira execuç
 | `npm run build` | Gera o build de produção |
 | `npm run start` | Serve o build de produção (rode `npm run build` antes) |
 | `npm run lint` | Roda o ESLint |
-| `npx tsc --noEmit` | Verifica os tipos |
+| `npm run type-check` | Verifica os tipos com o TypeScript |
 
 ## Estrutura
 
@@ -92,4 +92,4 @@ O [`CLAUDE.md`](./CLAUDE.md) define convenções para o crescimento do projeto, 
 - Mutações via Server Actions em `actions/`
 - Helpers e clients em `lib/`, e tipos e schemas compartilhados em `types/`
 - Modelo de variáveis de ambiente em `.env.example`
-- Scripts `npm run type-check` e `npm run test`
+- Script `npm run test`
